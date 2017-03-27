@@ -1,0 +1,27 @@
+/boot
+/dev
+/etc/fstab
+/etc/grub.d
+/etc/grub.conf
+/etc/inittab
+/etc/mtab
+/etc/network/interfaces
+/etc/network/interfaces.d
+/etc/rc.conf
+/etc/securetty
+/etc/ssh/sshd_config
+/etc/sysconfig/network-scripts
+/etc/sysconfig/network
+/etc/sysconfig/networking
+/lib/modules
+/lib/modules-load.d
+/lib/modprobe.d
+/lost+found
+/proc
+/run
+/sys
+/tmp
+/var/tmp
+
+rsync -azv -e ssh --exclude-from=exclude.txt root@11.22.33.44:/ /
+rsync -aczvS --delete -e ssh --exclude-from=exclude.txt 
